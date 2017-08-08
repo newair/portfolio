@@ -1,0 +1,248 @@
+/* Common CSS that applies to wider screens and some to other screens*/
+
+/*Applies to all*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
+    font-weight: 200;
+}
+
+/*Element CSS*/
+header {
+    display: -webkit-box, -moz-box, -ms-flexbox, -webkit-flex;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    margin: 2% 25%;
+}
+
+p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+h2 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Header styles*/
+.header_line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.identity {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+    flex-direction: column;
+    text-align: right;
+}
+
+.name {
+    font-size: 2.3em;
+    margin-top: auto;
+}
+
+.job_title {
+    margin-top: -2%;
+    margin-bottom: auto;
+    font-size: 1.0em;
+    font-weight: 400;
+}
+
+/*Main content body styles*/
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured_work_header {
+    width: 100%;
+    font-size: 2.0em;
+    padding-top: 3%;
+    font-weight: 400;
+    color: #808080;
+}
+
+.main_image {
+    margin: auto 0;
+}
+
+.featured_work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project1,
+.project2,
+.project3 {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+}
+
+.image1,
+.image2,
+.image3 {
+    height: 150px;
+}
+
+.image1 {
+    margin: 5% 5% 5% 0;
+}
+
+.image2 {
+    margin: 5% 0;
+}
+
+.image3 {
+    margin: 5% 0 5% 5%;
+}
+
+.project_header {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+
+/*Tab specific CSS*/
+@media(min-width: 640px) and (max-width: 1100px) {
+    body {
+        margin: 2%;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 3.00em;
+    }
+
+    .job_title {
+        margin-top: -2%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .identity {
+        padding: 5%;
+    }
+
+    .featured_work_main {
+        margin: 3%;
+    }
+
+    .featured_work_header {
+        font-size: 2.25em;
+        padding-top: 3%;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        width: 47%;
+        justify-content: space-between;
+    }
+
+    .image3 {
+        margin-left: 0;
+    }
+
+    .project_header {
+        text-align: center;
+        font-size: 2.20em;
+        font-weight: bold;
+    }
+
+    .project_code {
+        text-align: center;
+    }
+}
+
+
+/*Mobile specific CSS*/
+@media(max-width: 639px) {
+
+    body {
+        margin: 2%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 1.70em;
+    }
+
+    .job_title {
+        margin-top: -2%;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .featured_work_header {
+        font-size: 2em;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main_image {
+        height: 250px;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        width: 100%;
+    }
+
+    .image1 {
+        margin-right: 0;
+    }
+
+    .image3 {
+        margin-left: 0;
+    }
+
+    .identity {
+        width: 100%;
+    }
+
+    .project_header {
+        text-align: center;
+        font-size: 1.80em;
+        font-weight: bold;
+    }
+
+    .project_code {
+        text-align: center;
+    }
+}
