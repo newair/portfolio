@@ -15,8 +15,8 @@ This project contains source code for portfolio front end project which contains
 * Safari
 
 ## How to Run
-*Click on the index.html and choose the browser to run.
-*If the img folder is empty put npm install and type command grunt.
+* Click on the index.html and choose the browser to run.
+* If the img folder is empty put npm install and type command grunt.
 
 
 ## Possible issues
